@@ -1,51 +1,74 @@
-TrackIt – AI Powered Personal Finance App
+🚀 TrackIt – AI Financial Behavior App for Gen Z
 
-TrackIt is an AI-driven money assistant that helps students and Gen Z automatically track expenses, predict future spending, avoid overspending, and build better financial habits through gamification.
+TrackIt transforms the way young people manage money by combining AI automation, predictive intelligence, and gamified habit design.
+Built for MumbaiHacks 2025.
 
-🚀 Features
+⚡ What TrackIt Does
 
-AI Auto Expense Detection (reads SMS patterns)
+Auto-detects expenses from SMS
 
-Predictive Spending Forecast
+Predicts next month’s spending
 
-Smart Overspending Alerts
+Warns you before overspending
 
-Gamification (XP, Streaks, Levels)
+Builds habits with XP, streaks, missions
 
-AI Money Coach
+Gives a personalized savings roadmap
 
-Savings Roadmap
+Calculates a Financial Health Score (0–100)
 
-Financial Health Score
+Simple. Smart. Automatic.
 
-Analytics Dashboard
+🧠 Core AI Components
 
-📦 Tech Stack
+NLP Expense Parser → Extracts merchant, amount, category
 
-Frontend: TypeScript, Vite, React-like UI from AI Studio
+Forecasting Model → Predictive spending + risk alerts
 
-AI: Google Gemini API
+Behavior Engine → XP, rewards, streak logic
 
-Build Tool: Vite
+AI Coach → Daily money suggestions + micro-saving tips
 
-Deployment: Local / Any static host
+🏗️ Tech Stack
 
-🛠️ Run Locally
-Prerequisites
+TypeScript • Vite • Gemini API • On-device AI (Nano-ready)
 
-Node.js 18+
+Architecture:
+
+User → SMS/Inputs → AI Pipeline → Core Logic → Dashboard/Coach
+
+🚀 Local Setup
+npm install
+cp .env.local.example .env.local
+npm run dev
 
 
-📁 Project Structure
-/components     → UI components (Dashboard, Analytics, Coach, etc.)
-/services       → API services (Gemini, helpers)
-/public         → Static assets
-App.tsx         → Main app entry
-types.ts        → Shared types
-vite.config.ts  → Vite configuration
+Add your GEMINI_API_KEY inside .env.local.
 
-💡 About TrackIt
+🧭 Roadmap
 
-Created for MumbaiHacks 2025 — an AI-powered financial wellness app designed to turn spending into saving through intelligence + gamification.
+SMS → UPI → Bank statement ingestion
+
+On-device AI for privacy
+
+Deeper forecasting accuracy
+
+Micro-investment suggestions
+
+Real reward marketplace
+
+💰 Business Model
+
+₹99/month TrackIt Pro
+
+Fintech partnerships
+
+Referral commissions
+
+Paid saving challenges
+
+🎯 Vision
+
+To build the first AI money mentor for Gen Z that turns spending into lifelong financial discipline.
 ![alt text](image.png)
 
