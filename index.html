@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrakIt - Premium Finance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Imported 'Outfit' for stylish headings and 'Quicksand' for friendly body text */
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+      
+      body {
+        font-family: 'Quicksand', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: #f1f5f9;
+        color: #0f172a;
+        letter-spacing: 0.01em; /* Slight spacing for rounded fonts */
+      }
+
+      /* Apply Outfit to headings for a geometric, modern look */
+      h1, h2, h3, h4, h5, h6, .font-heading {
+        font-family: 'Outfit', sans-serif;
+      }
+
+      /* Premium Aurora Background */
+      .bg-gradient-mesh {
+        background-color: #f8fafc;
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, transparent 50%), 
+          radial-gradient(at 50% 0%, hsla(225,39%,30%,0.03) 0, transparent 50%), 
+          radial-gradient(at 100% 0%, hsla(339,49%,30%,0.03) 0, transparent 50%),
+          radial-gradient(at 0% 100%, hsla(260, 60%, 60%, 0.05) 0, transparent 50%),
+          radial-gradient(at 80% 80%, hsla(220, 60%, 60%, 0.05) 0, transparent 50%);
+        background-attachment: fixed;
+      }
+
+      /* Premium Glassmorphism Utilities */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+      }
+      
+      .glass-card-hover {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .glass-card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(99, 102, 241, 0.15);
+        border-color: rgba(99, 102, 241, 0.2);
+      }
+
+      /* Animations */
+      .animate-fade-in { animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+      .animate-slide-up { animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+      .animate-scale-in { animation: scaleIn 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+      .animate-pulse-slow { animation: pulse 3s infinite; }
+      
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes scaleIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+      
+      /* Hide Scrollbar but allow scroll */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+      .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+        "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gradient-mesh text-slate-900 antialiased selection:bg-indigo-500 selection:text-white overflow-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
