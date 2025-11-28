@@ -3,6 +3,8 @@
 TrackIt transforms the way young people manage money by combining AI automation, predictive intelligence, and gamified habit design.
 Built for MumbaiHacks 2025.
 
+https://trakit-ai-financial-assistant-866304399123.us-west1.run.app
+
 ⚡ What TrackIt Does
 
 Auto-detects expenses from SMS
